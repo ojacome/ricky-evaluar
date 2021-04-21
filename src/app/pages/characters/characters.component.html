@@ -1,1 +1,14 @@
-<p>characters works!</p>
+<div class="row row-cols-1 row-cols-md-3 g-4" >
+    
+    <div class="col" *ngFor="let item of characters" [routerLink]="['/character', item.id]" >
+      <div class="card text-dark">
+        <img [src]="item.image" class="img-tumbnail" [alt]="item.name">
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">{{item.location.name}}</p>
+        </div>
+      </div>
+    </div>
+ 
+  
+  </div>  

@@ -1,1 +1,8 @@
-<p>character works!</p>
+<div class="row" *ngIf="character">
+    <div class="col-md-6">
+        <img [src]="character.image" [alt]="character.name" class="img-thumnail">
+    </div>
+    <div class="col-md-6">
+        <h1>{{ character.name}}</h1>
+    </div>
+</div>
